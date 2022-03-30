@@ -28,19 +28,19 @@ function MyApp({ Component, pageProps }) {
         <title>AppBeleza</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
-        <meta name="author" content="StarApp Sistemas" />
+        <meta name="author" content="Autor" />
         <meta name="robots" content="index" />
         <link rel="icon" type="image/png" href="favicon.png" />
-        <meta name="description" content="Solução para salões de beleza" />
+        <meta name="description" content="descricao" />
         <meta
           property="og:description"
-          content="Solução para salões de beleza"
+          content="descricao"
         />
-        <meta property="og:image" itemProp="image" content="logo_colors.png" />
-        <meta property="og:title" content={"AppBeleza"} />
-        <meta name="msapplication-TileImage" content="logo_colors.png" />
+        <meta property="og:image" itemProp="image" content="logo.png" />
+        <meta property="og:title" content={"Descricao"} />
+        <meta name="msapplication-TileImage" content="logo.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://appbeleza.com.br/" />
+        <meta property="og:url" content="https://url.com.br/" />
       </Head>
 
       <DeviceProvider>
