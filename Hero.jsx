@@ -7,7 +7,7 @@ export const Hero = () => (
     id="inicio"
     className="bg-hero bg-mainPurple relative flex justify-center h-[550px] md:h-[750px] pt-[80px] lg:pt-[125px]"
   >
-    <Image src="/banner_texture.webp" alt="" layout="fill" className="z-0" />
+    <Image src="/img.webp" alt="" layout="fill" className="z-0" />
     <div className="flex flex-col full-center gap-16 z-10 lg:gap-36 content">
       <div className="h-1/4 w-[95%] flex flex-col items-center">
         <h1
@@ -15,7 +15,7 @@ export const Hero = () => (
           data-aos-duration="1000"
           className="text-4xl lg:text-7xl text-white text-center mb-7 font-bold ubuntu"
         >
-          AppBeleza
+          lorem
         </h1>
         <p
           data-aos="fade-up"
@@ -32,15 +32,15 @@ export const Hero = () => (
           data-aos-delay="500"
           className="text-yellow-300 text-md mt-8 font-light"
         >
-          Quer fazer parte desta experiência?
+          lorem
         </p>
-        <Link href="/#cadastro" passHref={undefined}>
+        <Link href="/#teste" passHref={undefined}>
           <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
             <m.button
               whileHover={{ scale: 1.05 }}
               className="bg-yellow-400 text-md px-4 py-2 rounded mt-2 shadow hover:cursor-pointer z-10"
             >
-              Faça seu cadastro
+              lorem
             </m.button>
           </div>
         </Link>
@@ -52,12 +52,12 @@ export const Hero = () => (
         data-aos-delay="1000"
         className="relative -mb-16 lg:-mb-24 w-[90%] sm:w-3/5 h-4/5 z-10 flex justify-center items-center"
       >
-        <Image src="/mock_beleza_hero.webp" alt="" width={1100} height={699} />
+        <Image src="/teste.webp" alt="" width={1100} height={699} />
       </div>
     </div>
     <div className="absolute bottom-[-2px]">
       <div className="relative w-screen h-[100px] lg:h-[274px]">
-        <Image src="/step.png" layout="fill" alt="" />
+        <Image src="/teste.png" layout="fill" alt="" />
       </div>
     </div>
   </section>
