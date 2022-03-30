@@ -7,12 +7,12 @@
   <Head />
 ```
 Contém tags pra compor boa pontuação dentro do SEO, e tags OpenGraph   
-   
+<br />
 ```js
   <DeviceProvider />
 ```
 Contexto pra ser usado durante app, pra checar se dispositivo é mobile ou desktop   
-   
+<br />   
 
 ```js
   <LazyMotion />
