@@ -1,5 +1,9 @@
 # assets-landing-page-Next.js
 
+## _document.jsx
+
+### Preconnect com fontes p/ reduzir bundle size
+
 ## _app.jsx
 
 ### Particularidades
