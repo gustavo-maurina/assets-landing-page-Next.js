@@ -16,4 +16,4 @@ Contexto pra ser usado durante app, pra checar se dispositivo é mobile ou deskt
 ```js
   <LazyMotion />
 ```
-Envolver app pra poder usar componente `m` ao invés do componente `motion` dentro do app, que diminiu bundle size
+Envolver app pra poder usar componente js`m` ao invés do componente `motion` dentro do app, que diminiu bundle size
