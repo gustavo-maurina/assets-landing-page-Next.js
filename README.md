@@ -22,3 +22,12 @@ Contexto pra ser usado durante app, pra checar se dispositivo é mobile ou deskt
   <LazyMotion />
 ```
 Envolver app pra poder usar componente `m` ao invés do componente `motion` dentro do app, que diminiu bundle size
+
+## Hero.jsx
+
+### uso do componente `m` e algumas outras tecnicas
+
+
+## DeviceContext.jsx
+
+### Componente Context API pra resgatar dispositivo mobile/desktop
