@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import BarsIcon from "react-line-awesome/dist/icons/BarsIcon";
@@ -24,6 +25,7 @@ export const NavMobile = () => {
   }, []);
 
   function changeRoute(route) {
+    document.documentElement.style.overflowY = "visible";
     setMenuOpened(false);
     router.push(route);
   }
@@ -31,19 +33,32 @@ export const NavMobile = () => {
   return (
     <>
       {navVisible && (
-        <div className="h-[70px] w-full fixed top-0 z-50 bg-white drop-shadow">
+        <div className="h-[60px] w-full fixed top-0 z-50 bg-white drop-shadow">
           <div className="h-full content flex items-center justify-between px-2">
-            <div>
-              <Image src="/logo_colors.png" width={110} height={52} alt="" />
+            <div className="flex items-center">
+              <Link href={"/"} passHref={undefined}>
+                <Image src="/logo_colors.png" width={88} height={41.6} alt="" />
+              </Link>
             </div>
-            <div>
+
+            <div className="flex gap-5 items-center">
+              {!menuOpened && (
+                <div>
+                  <p
+                    onClick={() => changeRoute("/#cadastro")}
+                    className="text-md bg-gradient-to-br from-pink-600 to-pink-800 px-4 py-1 text-white rounded cursor-pointer"
+                  >
+                    Teste grátis
+                  </p>
+                </div>
+              )}
               {menuOpened ? (
                 <CloseIcon
                   onClick={() => {
                     document.documentElement.style.overflowY = "visible";
                     setMenuOpened(false);
                   }}
-                  className="text-mainPink"
+                  className="text-mainPink !text-3xl"
                 />
               ) : (
                 <BarsIcon
@@ -51,7 +66,7 @@ export const NavMobile = () => {
                     document.documentElement.style.overflowY = "hidden";
                     setMenuOpened(true);
                   }}
-                  className="text-mainPink"
+                  className="text-mainPink !text-3xl"
                 />
               )}
             </div>
@@ -108,7 +123,7 @@ export const NavMobile = () => {
           <div>
             <p
               onClick={() => changeRoute("/#cadastro")}
-              className="text-xl mt-8 bg-gradient-to-br from-pink-600 to-pink-800 px-14 py-2 text-white rounded"
+              className="text-xl mt-8 bg-gradient-to-br from-pink-600 to-pink-800 px-14 py-2 text-white rounded cursor-pointer"
             >
               Teste grátis
             </p>
